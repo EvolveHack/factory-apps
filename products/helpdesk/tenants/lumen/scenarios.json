@@ -1,1 +1,4 @@
-[]
+[
+  { "name": "outage from status page", "message": "Is anything down right now?", "expect": { "tools": ["checkStatusPage"], "anyKeyword": ["dashboard"] } },
+  { "name": "status page update text", "message": "Are dashboards having an outage? What does your status page say?", "expect": { "tools": ["checkStatusPage"], "anyKeyword": ["slow database node", "11:00"] } }
+]
