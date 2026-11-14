@@ -1,0 +1,25 @@
+{
+  "company": "Bluewater Distributors",
+  "industry": "Food service",
+  "orderPrefix": "BW",
+  "accent": "#0369a1",
+  "channels": ["orders", "big-orders", "warehouse"],
+  "systems": { "accounting": false, "warehouse": true, "email": true },
+  "buyers": [
+    "Harbor Street Grill",
+    "Tidewater Bistro",
+    "Saltmarsh Cafe",
+    "Juniper Hall Catering",
+    "Lighthouse Diner",
+    "Northshore School District",
+    "Brightwell Hospital Kitchen"
+  ],
+  "catalog": [
+    { "sku": "SAL-FIL", "name": "Salmon fillet, 10 lb case", "price": 164.0, "unitCost": 128.0, "maxQty": 25 },
+    { "sku": "RIC-50", "name": "Long grain rice, 50 lb", "price": 38.5, "unitCost": 29.0, "maxQty": 40 },
+    { "sku": "OIL-35", "name": "Fryer oil, 35 lb", "price": 46.0, "unitCost": 37.5, "maxQty": 30 },
+    { "sku": "LET-CS", "name": "Romaine lettuce, case", "price": 42.0, "unitCost": 30.0, "maxQty": 35 },
+    { "sku": "CHK-40", "name": "Chicken breast, 40 lb", "price": 118.0, "unitCost": 92.0, "maxQty": 30 },
+    { "sku": "NAP-3K", "name": "Paper napkins, 3000 ct", "price": 29.0, "unitCost": 18.5, "maxQty": 20 }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "company": "Granite Supply",
+  "industry": "Building materials",
+  "orderPrefix": "GS",
+  "accent": "#b45309",
+  "channels": ["orders", "big-orders", "warehouse"],
+  "systems": { "accounting": false, "warehouse": true, "email": true },
+  "buyers": [
+    "Hollis Builders",
+    "Ridgeback Construction",
+    "Marlowe Homes",
+    "Copperfield Contracting",
+    "Stonebridge Renovation",
+    "Alder Creek Roofing",
+    "Quarry Hill Developers"
+  ],
+  "catalog": [
+    { "sku": "LUM-2X4", "name": "2x4 stud, 8 ft", "price": 4.85, "unitCost": 3.6, "maxQty": 600 },
+    { "sku": "PLY-34", "name": "Plywood sheet, 3/4 in", "price": 52.0, "unitCost": 40.5, "maxQty": 80 },
+    { "sku": "CEM-80", "name": "Concrete mix, 80 lb", "price": 7.4, "unitCost": 5.1, "maxQty": 300 },
+    { "sku": "SHG-BDL", "name": "Roof shingles, bundle", "price": 38.0, "unitCost": 27.0, "maxQty": 120 },
+    { "sku": "DRY-12", "name": "Drywall panel, 1/2 in", "price": 16.5, "unitCost": 11.9, "maxQty": 200 },
+    { "sku": "REB-20", "name": "Rebar, 20 ft", "price": 12.25, "unitCost": 9.8, "maxQty": 250 }
+  ]
+}
