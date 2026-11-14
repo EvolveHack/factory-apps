@@ -1,0 +1,33 @@
+{
+  "name": "Summit Outdoor",
+  "shopperName": "Sam",
+  "colors": { "brand": "#1E3A52", "brandText": "#FFFFFF", "accent": "#F6D9C4", "background": "#F3F5F7" },
+  "hero": {
+    "eyebrow": "New season gear",
+    "title": "Go further this weekend",
+    "subtitle": "Light packs and warm layers for the trail.",
+    "cta": "Shop new gear",
+    "emoji": "🏔️"
+  },
+  "categories": [
+    { "id": "packs", "name": "Packs", "emoji": "🎒" },
+    { "id": "apparel", "name": "Apparel", "emoji": "🧥" },
+    { "id": "camp", "name": "Camp", "emoji": "⛺" },
+    { "id": "trail", "name": "Trail", "emoji": "🥾" }
+  ],
+  "products": [
+    { "id": "daypack", "name": "Trail daypack 24L", "price": 89, "category": "packs", "emoji": "🎒", "tint": "#DDE6EE", "rating": 4.8, "blurb": "Light 24 liter pack with a rain cover and a padded laptop sleeve." },
+    { "id": "water-bottle", "name": "Insulated water bottle", "price": 34, "category": "camp", "emoji": "💧", "tint": "#E2EEF0", "rating": 4.7, "blurb": "Keeps water cold for 24 hours. Holds 32 ounces." },
+    { "id": "base-layer", "name": "Merino base layer", "price": 79, "category": "apparel", "emoji": "👕", "tint": "#F4E1D3", "rating": 4.6, "blurb": "Soft merino wool top that stays warm when wet and does not hold odor." },
+    { "id": "hiking-boots", "name": "Waterproof hiking boots", "price": 139, "category": "trail", "emoji": "🥾", "tint": "#E6E9EC", "rating": 4.5, "blurb": "Leather boots with a waterproof lining and a grippy sole." },
+    { "id": "headlamp", "name": "Headlamp 400 lumen", "price": 39, "category": "camp", "emoji": "🔦", "tint": "#F1EBD9", "rating": 4.8, "blurb": "Rechargeable headlamp with a red light mode for night camp." },
+    { "id": "camp-mug", "name": "Titanium camp mug", "price": 29, "category": "camp", "emoji": "☕", "tint": "#E5E2DE", "rating": 4.4, "blurb": "Light titanium mug with folding handles. Goes right on the stove." },
+    { "id": "rain-shell", "name": "Rain shell jacket", "price": 149, "category": "apparel", "emoji": "🧥", "tint": "#DCE7E2", "rating": 4.7, "blurb": "Waterproof shell with sealed seams and pit zips." },
+    { "id": "wool-socks", "name": "Wool hiking socks", "price": 22, "category": "trail", "emoji": "🧦", "tint": "#F2DED6", "rating": 4.9, "blurb": "Merino wool socks with a cushioned sole. Sold as a pair." }
+  ],
+  "orders": [
+    { "id": "SO-2210", "date": "Nov 10, 2026", "status": "Delivered", "items": [ { "productId": "wool-socks", "qty": 3 }, { "productId": "headlamp", "qty": 1 } ] },
+    { "id": "SO-2174", "date": "Oct 18, 2026", "status": "Delivered", "items": [ { "productId": "daypack", "qty": 1 } ] },
+    { "id": "SO-2131", "date": "Sep 12, 2026", "status": "Delivered", "items": [ { "productId": "water-bottle", "qty": 2 } ] }
+  ]
+}
