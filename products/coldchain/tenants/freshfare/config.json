@@ -1,0 +1,42 @@
+{
+  "name": "FreshFare Markets",
+  "accent": "#34d399",
+  "shiftLead": { "name": "Dana Ortiz", "phone": "(555) 010-4417" },
+  "shiftStart": "06:00",
+  "sites": [
+    {
+      "id": "elm",
+      "name": "Elm Street store",
+      "units": [
+        { "id": "ff-elm-1", "name": "Ice cream case" },
+        { "id": "ff-elm-2", "name": "Frozen aisle 4" },
+        { "id": "ff-elm-3", "name": "Walk-in freezer" },
+        { "id": "ff-elm-4", "name": "Meat freezer" }
+      ]
+    },
+    {
+      "id": "harbor",
+      "name": "Harbor Road store",
+      "units": [
+        { "id": "ff-harbor-1", "name": "Ice cream case" },
+        { "id": "ff-harbor-2", "name": "Frozen aisle 2" },
+        { "id": "ff-harbor-3", "name": "Walk-in freezer" }
+      ]
+    },
+    {
+      "id": "maple",
+      "name": "Maple Plaza store",
+      "units": [
+        { "id": "ff-maple-1", "name": "Frozen aisle 6" },
+        { "id": "ff-maple-2", "name": "Walk-in freezer" },
+        { "id": "ff-maple-3", "name": "Bakery freezer" }
+      ]
+    }
+  ],
+  "simEvents": [
+    { "unitId": "ff-harbor-3", "minute": 4, "kind": "drift", "minutes": 30 },
+    { "unitId": "ff-elm-2", "minute": 44, "kind": "door", "minutes": 5 },
+    { "unitId": "ff-maple-2", "minute": 70, "kind": "door", "minutes": 4 },
+    { "unitId": "ff-elm-4", "minute": 95, "kind": "drift", "minutes": 28 }
+  ]
+}

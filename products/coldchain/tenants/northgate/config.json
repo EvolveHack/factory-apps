@@ -1,0 +1,32 @@
+{
+  "name": "Northgate Warehousing",
+  "accent": "#60a5fa",
+  "shiftLead": { "name": "Sam Okafor", "phone": "(555) 010-8823" },
+  "shiftStart": "06:00",
+  "sites": [
+    {
+      "id": "riverbend",
+      "name": "Riverbend cold warehouse",
+      "units": [
+        { "id": "ng-blast-a", "name": "Blast freezer A" },
+        { "id": "ng-blast-b", "name": "Blast freezer B" },
+        { "id": "ng-room-1", "name": "Freezer room 1" },
+        { "id": "ng-room-2", "name": "Freezer room 2" },
+        { "id": "ng-room-3", "name": "Freezer room 3" },
+        { "id": "ng-room-4", "name": "Freezer room 4" },
+        { "id": "ng-room-5", "name": "Freezer room 5" },
+        { "id": "ng-room-6", "name": "Freezer room 6" },
+        { "id": "ng-icecream", "name": "Ice cream room" },
+        { "id": "ng-seafood", "name": "Seafood room" },
+        { "id": "ng-dock", "name": "Dock buffer" },
+        { "id": "ng-returns", "name": "Returns freezer" }
+      ]
+    }
+  ],
+  "simEvents": [
+    { "unitId": "ng-dock", "minute": 6, "kind": "drift", "minutes": 32 },
+    { "unitId": "ng-room-3", "minute": 43, "kind": "door", "minutes": 6 },
+    { "unitId": "ng-returns", "minute": 75, "kind": "door", "minutes": 4 },
+    { "unitId": "ng-room-5", "minute": 100, "kind": "drift", "minutes": 30 }
+  ]
+}
