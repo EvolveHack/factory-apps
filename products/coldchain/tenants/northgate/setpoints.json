@@ -1,0 +1,16 @@
+{
+  "units": {
+    "ng-blast-a": { "setpointC": -32, "defrostTimes": ["00:00", "12:00"], "defrostMinutes": 40, "defrostLimitC": -24 },
+    "ng-blast-b": { "setpointC": -32, "defrostTimes": ["06:45", "18:45"], "defrostMinutes": 40, "defrostLimitC": -24 },
+    "ng-room-1": { "setpointC": -23, "defrostTimes": ["01:00", "09:00", "17:00"], "defrostMinutes": 30, "defrostLimitC": -18 },
+    "ng-room-2": { "setpointC": -23, "defrostTimes": ["01:30", "09:30", "17:30"], "defrostMinutes": 30, "defrostLimitC": -18 },
+    "ng-room-3": { "setpointC": -23, "defrostTimes": ["02:00", "10:00", "18:00"], "defrostMinutes": 30, "defrostLimitC": -18 },
+    "ng-room-4": { "setpointC": -23, "defrostTimes": ["02:30", "10:30", "18:30"], "defrostMinutes": 30, "defrostLimitC": -18 },
+    "ng-room-5": { "setpointC": -23, "defrostTimes": ["03:00", "11:00", "19:00"], "defrostMinutes": 30, "defrostLimitC": -18 },
+    "ng-room-6": { "setpointC": -23, "defrostTimes": ["03:30", "11:30", "19:30"], "defrostMinutes": 30, "defrostLimitC": -18 },
+    "ng-icecream": { "setpointC": -27, "defrostTimes": ["04:00", "16:00"], "defrostMinutes": 30, "defrostLimitC": -21 },
+    "ng-seafood": { "setpointC": -25, "defrostTimes": ["04:30", "16:30"], "defrostMinutes": 30, "defrostLimitC": -20 },
+    "ng-dock": { "setpointC": -20, "defrostTimes": ["05:00", "13:00", "21:00"], "defrostMinutes": 20, "defrostLimitC": -16 },
+    "ng-returns": { "setpointC": -20, "defrostTimes": ["05:30", "13:30", "21:30"], "defrostMinutes": 20, "defrostLimitC": -16 }
+  }
+}
