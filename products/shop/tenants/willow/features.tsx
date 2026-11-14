@@ -7,20 +7,20 @@ import type { OrderSlotProps, ProductSlotProps, SlotProps } from "../../types";
 export function HomeTop(_props: SlotProps) {
   return (
     <div
-      data-testid="thanksgiving-banner"
+      data-testid="christmas-banner"
       role="note"
-      className="flex items-center gap-3 rounded-2xl bg-[#B5622E] p-4 text-white shadow-sm"
+      className="flex items-center gap-3 rounded-2xl bg-[#A61E2A] p-4 text-white shadow-sm"
     >
-      <span className="text-3xl" aria-hidden="true">🦃</span>
+      <span className="text-3xl" aria-hidden="true">🎄</span>
       <span className="min-w-0 flex-1">
-        <span data-testid="thanksgiving-banner-title" className="block text-sm font-semibold">
-          Happy Thanksgiving
+        <span data-testid="christmas-banner-title" className="block text-sm font-semibold">
+          Merry Christmas
         </span>
         <span className="block text-xs opacity-90">
-          Set a warm table for the holiday. Gather, share, and give thanks.
+          Find the perfect gift for everyone on your list. Wishing you a happy holiday season.
         </span>
       </span>
-      <span className="text-2xl" aria-hidden="true">🍂</span>
+      <span className="text-2xl" aria-hidden="true">🎁</span>
     </div>
   );
 }
