@@ -1,0 +1,33 @@
+{
+  "name": "Willow Pine Home",
+  "shopperName": "Sam",
+  "colors": { "brand": "#3F5E4A", "brandText": "#FFFFFF", "accent": "#EADFCF", "background": "#FAF7F2" },
+  "hero": {
+    "eyebrow": "Fall home edit",
+    "title": "Make home feel warm again",
+    "subtitle": "Soft textures and warm light for cooler days.",
+    "cta": "Shop the edit",
+    "emoji": "🕯️"
+  },
+  "categories": [
+    { "id": "living", "name": "Living", "emoji": "🛋️" },
+    { "id": "kitchen", "name": "Kitchen", "emoji": "🍽️" },
+    { "id": "bath", "name": "Bath", "emoji": "🛁" },
+    { "id": "decor", "name": "Decor", "emoji": "🪴" }
+  ],
+  "products": [
+    { "id": "linen-throw", "name": "Linen throw blanket", "price": 68, "category": "living", "emoji": "🧣", "tint": "#E8DCCB", "rating": 4.8, "blurb": "Stonewashed linen that gets softer with every wash. 50 by 60 inches." },
+    { "id": "mug-set", "name": "Stoneware mug set", "price": 42, "category": "kitchen", "emoji": "☕", "tint": "#DCE3DA", "rating": 4.7, "blurb": "Four glazed mugs that hold 12 ounces each. Safe for the dishwasher." },
+    { "id": "oak-board", "name": "Oak serving board", "price": 54, "category": "kitchen", "emoji": "🪵", "tint": "#EFE3D0", "rating": 4.6, "blurb": "Solid oak with a handle. Made for cheese, bread, and long dinners." },
+    { "id": "cedar-candle", "name": "Cedar and sage candle", "price": 24, "category": "decor", "emoji": "🕯️", "tint": "#F2E6D8", "rating": 4.9, "blurb": "Soy wax candle with a cotton wick. Burns for about 50 hours." },
+    { "id": "storage-basket", "name": "Woven storage basket", "price": 38, "category": "living", "emoji": "🧺", "tint": "#EDE4D3", "rating": 4.5, "blurb": "Hand woven seagrass basket for blankets, toys, or plants." },
+    { "id": "table-lamp", "name": "Ceramic table lamp", "price": 96, "category": "decor", "emoji": "💡", "tint": "#E4E7DF", "rating": 4.7, "blurb": "Matte ceramic base with a linen shade. Warm light for reading." },
+    { "id": "towel-set", "name": "Cotton bath towel set", "price": 58, "category": "bath", "emoji": "🛁", "tint": "#E1E8EC", "rating": 4.8, "blurb": "Two bath towels and two hand towels in soft organic cotton." },
+    { "id": "glass-carafe", "name": "Glass water carafe", "price": 32, "category": "kitchen", "emoji": "🫙", "tint": "#E3ECE8", "rating": 4.4, "blurb": "Clear glass carafe with a cup that doubles as a lid." }
+  ],
+  "orders": [
+    { "id": "WP-1042", "date": "Nov 8, 2026", "status": "Delivered", "items": [ { "productId": "cedar-candle", "qty": 2 }, { "productId": "mug-set", "qty": 1 } ] },
+    { "id": "WP-1017", "date": "Oct 21, 2026", "status": "Delivered", "items": [ { "productId": "linen-throw", "qty": 1 } ] },
+    { "id": "WP-0988", "date": "Sep 30, 2026", "status": "Delivered", "items": [ { "productId": "towel-set", "qty": 1 }, { "productId": "glass-carafe", "qty": 1 } ] }
+  ]
+}
