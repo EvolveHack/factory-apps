@@ -24,6 +24,22 @@ export function CartExtras(_props: SlotProps) {
 }
 
 // OrderActions: buttons on each past order on the Orders screen.
-export function OrderActions(_props: OrderSlotProps) {
-  return null;
+export function OrderActions({ shop, order }: OrderSlotProps) {
+  const items = order.items.filter((l) => shop.productById(l.productId));
+  if (items.length === 0) return null;
+  return (
+    <button
+      type="button"
+      data-testid="reorder"
+      data-order-id={order.id}
+      onClick={() => {
+        items.forEach((l) => shop.addToCart(l.productId, l.qty));
+        shop.notify(`Order ${order.id} is back in your cart`);
+        shop.open({ name: "cart" });
+      }}
+      className="w-full rounded-xl bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-[var(--brand-text)] shadow-sm active:opacity-90"
+    >
+      Reorder
+    </button>
+  );
 }
