@@ -1,13 +1,13 @@
 {
   "name": "Willow Pine Home",
   "shopperName": "Sam",
-  "colors": { "brand": "#3F5E4A", "brandText": "#FFFFFF", "accent": "#EADFCF", "background": "#FAF7F2" },
+  "colors": { "brand": "#A61E2A", "brandText": "#FFFFFF", "accent": "#EADFCF", "background": "#FAF7F2" },
   "hero": {
-    "eyebrow": "Fall home edit",
-    "title": "Make home feel warm again",
-    "subtitle": "Soft textures and warm light for cooler days.",
-    "cta": "Shop the edit",
-    "emoji": "🕯️"
+    "eyebrow": "Holiday home edit",
+    "title": "Wrap up the season in style",
+    "subtitle": "Thoughtful gifts and cozy pieces for the holidays.",
+    "cta": "Shop gifts",
+    "emoji": "🎁"
   },
   "categories": [
     { "id": "living", "name": "Living", "emoji": "🛋️" },
