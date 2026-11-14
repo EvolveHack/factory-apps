@@ -20,4 +20,13 @@ export const workflows: Workflow[] = [
     run: (order, ctx) =>
       ctx.post("warehouse", `${order.id} is packed: ${order.items.length} line${order.items.length === 1 ? "" : "s"} for ${order.customer}`),
   },
+  {
+    id: "big-orders-shipped",
+    name: "Flag big shipped orders",
+    trigger: "shipped",
+    action: "Post orders over $10,000 to #big-orders with the margin",
+    when: (order) => order.total > 10000,
+    run: (order, ctx) =>
+      ctx.post("big-orders", `Big order ${order.id} shipped to ${order.customer}: ${ctx.money(order.total)} at ${order.margin}% margin`),
+  },
 ];
