@@ -8,7 +8,7 @@ const CUSTOMER = process.env.CUSTOMER;
 const SECRET = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
 const PKG = process.env.BOARD_PACKAGE_JSON || path.resolve("package.json");
 
-const headers = SECRET ? { "x-vercel-protection-bypass": SECRET, "x-vercel-set-bypass-cookie": "true" } : {};
+const headers = SECRET ? { "x-vercel-protection-bypass": SECRET } : {};
 
 function fail(reason) {
   console.log(`ASSERT_FAIL ${reason}`);

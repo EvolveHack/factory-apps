@@ -22,7 +22,7 @@ if (!PAGE_URL) fail("PAGE_URL is not set");
 if (!CUSTOMER) fail("CUSTOMER is not set");
 
 const headers = VERCEL_AUTOMATION_BYPASS_SECRET
-  ? { "x-vercel-protection-bypass": VERCEL_AUTOMATION_BYPASS_SECRET, "x-vercel-set-bypass-cookie": "true" }
+  ? { "x-vercel-protection-bypass": VERCEL_AUTOMATION_BYPASS_SECRET }
   : {};
 
 async function checkReplay() {
