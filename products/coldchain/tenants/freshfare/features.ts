@@ -11,4 +11,13 @@ export const alerts: AlertRule[] = [
         ? { message: `Above -15 C for 10 minutes. Now ${reading.tempC.toFixed(1)} C.` }
         : null,
   },
+  {
+    id: "door-open-3-min",
+    name: "Door left open",
+    page: true,
+    check: (reading, history) =>
+      streak(reading, history, (r) => r.doorOpen) >= 3
+        ? { message: "Door open for 3 minutes. Please close it." }
+        : null,
+  },
 ];
