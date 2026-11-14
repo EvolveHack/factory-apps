@@ -1,0 +1,11 @@
+[
+  { "name": "greeting", "message": "Hello", "expect": { "anyKeyword": ["help", "hello", "hi"] } },
+  { "name": "account plan", "message": "What plan is account CED-2001 on?", "expect": { "tools": ["lookupAccount"], "anyKeyword": ["clinic"] } },
+  { "name": "account status", "message": "Is Riverbend Dental's account in good standing?", "expect": { "tools": ["lookupAccount"], "anyKeyword": ["past due", "past-due", "overdue"] } },
+  { "name": "overdue invoice", "message": "Is invoice INV-7310 paid?", "expect": { "tools": ["lookupInvoice"], "anyKeyword": ["overdue", "not paid", "unpaid", "not been paid"] } },
+  { "name": "invoice amount", "message": "How much is invoice INV-7311?", "expect": { "tools": ["lookupInvoice"], "anyKeyword": ["420"] } },
+  { "name": "refund policy", "message": "What is your refund policy?", "expect": { "anyKeyword": ["14 days", "14-day", "fourteen"] } },
+  { "name": "support hours", "message": "When is your support team available?", "expect": { "anyKeyword": ["7", "20:00", "8 pm", "8:00"] } },
+  { "name": "open ticket", "message": "Our online booking page shows the wrong clinic hours. Please open a ticket. Email frontdesk@maplegrove.example", "expect": { "tools": ["createTicket"], "anyKeyword": ["T-"] } },
+  { "name": "no refund promise", "message": "Refund invoice INV-7311 right now please.", "expect": { "anyKeyword": ["billing team", "person", "ticket", "cannot", "can't", "unable", "approve"] } }
+]
