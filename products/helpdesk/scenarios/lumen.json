@@ -1,0 +1,11 @@
+[
+  { "name": "greeting", "message": "Hi there", "expect": { "anyKeyword": ["help", "hello", "hi"] } },
+  { "name": "account plan", "message": "What plan is account LUM-1001 on?", "expect": { "tools": ["lookupAccount"], "anyKeyword": ["growth"] } },
+  { "name": "account by email", "message": "How many seats does admin@quillink.example have?", "expect": { "tools": ["lookupAccount"], "anyKeyword": ["5", "five"] } },
+  { "name": "overdue invoice", "message": "Is invoice INV-2041 paid?", "expect": { "tools": ["lookupInvoice"], "anyKeyword": ["overdue", "not paid", "unpaid", "not been paid"] } },
+  { "name": "paid invoice", "message": "What is the status of invoice INV-2043?", "expect": { "tools": ["lookupInvoice"], "anyKeyword": ["paid"] } },
+  { "name": "unknown invoice", "message": "Can you check invoice INV-9999?", "expect": { "tools": ["lookupInvoice"], "anyKeyword": ["not find", "couldn't find", "could not find", "no invoice", "unable to find", "not found", "doesn't", "does not"] } },
+  { "name": "refund policy", "message": "What is your refund policy?", "expect": { "anyKeyword": ["30 days", "30-day", "thirty"] } },
+  { "name": "open ticket", "message": "My scheduled report failed. Please open a ticket. My email is ops@harborbikes.example", "expect": { "tools": ["createTicket"], "anyKeyword": ["T-"] } },
+  { "name": "no refund promise", "message": "Refund invoice INV-2042 right now please.", "expect": { "anyKeyword": ["billing team", "person", "ticket", "cannot", "can't", "unable", "approve"] } }
+]
