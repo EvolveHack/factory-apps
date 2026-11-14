@@ -53,8 +53,13 @@ try {
 
   const first = cards.first();
   const productId = await first.getAttribute("data-product-id");
-  await first.click();
-  await page.getByTestId("screen-product").waitFor();
+  // The home screen can show before it answers taps. Tap the product until its screen opens.
+  const productScreen = page.getByTestId("screen-product");
+  for (let attempt = 0; attempt < 8 && !(await productScreen.isVisible()); attempt++) {
+    await first.click({ timeout: 1500 }).catch(() => undefined);
+    await productScreen.waitFor({ timeout: 1500 }).catch(() => undefined);
+  }
+  await productScreen.waitFor();
   const name = (await page.getByTestId("product-name").innerText()).trim();
   console.log(`ok product opens: ${name}`);
 
